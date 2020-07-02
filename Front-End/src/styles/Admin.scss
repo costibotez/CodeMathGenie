@@ -1,0 +1,84 @@
+@import "styles/variables.scss";
+
+.Admin-page {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 20px;
+  overflow-y: auto;
+  padding: 70px 0 20px 0;
+}
+.card-table {
+  width: calc(100% - 40px);
+  border: 1px solid #333;
+  position: relative;
+  background-color: transparent !important;
+  .kibjRx {
+    background-color: transparent;
+    position: unset;
+  }
+  .rdt_TableHeader {
+    position: unset;
+  }
+  .kJdJTV {
+    position: unset;
+    overflow: hidden;
+    .jDHQPG {
+      height: auto;
+    }
+  }
+  .hFJClG {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  footer select option{
+    color: black;
+  }
+}
+.search-box {
+  border-bottom: white 1px solid;
+  color: $off-white;
+  padding-bottom: 2px;
+  input {
+    background: none;
+    border: none;
+    color: $off-white;
+    margin-left: 5px;
+    outline: none;
+  }
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    color: $off-white;
+    font-weight: 700;
+    padding: 0;
+    width: 24px !important;
+    &:hover {
+      color: white;
+    }
+  }
+}
+.permission-filter {
+  width: 120px;
+  color: black;
+  margin-right: 10px;
+  .css-yk16xz-control, .css-1pahdxg-control {
+      background-color: #252132;
+      border-color: white;
+      box-shadow: none;
+      &:hover {
+          background-color: #252132;
+          border-color: white;
+      }
+      .css-1uccc91-singleValue {
+          color: $off-white;
+      }
+  }
+  .css-xb97g8 {
+      color: black;
+  }
+  .css-1wa3eu0-placeholder, .css-tlfecz-indicatorContainer, .css-1gtu0rj-indicatorContainer {
+      color: $off-white;
+  }
+}

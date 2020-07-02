@@ -1,0 +1,22 @@
+@import 'styles/variables.scss';
+
+#new-file-modal .modal-content{
+    background: $dark-purple;
+    .modal-header {
+        color: $off-white;
+        .close {
+            color: $off-white;
+        }
+    }
+    .modal-body {
+        display: flex;
+        .file-name-input {
+            padding-top: 5px;
+            width: 70%;
+        }
+        .help-block {
+            padding-top: 3px;
+            color: #dd0000;
+        }
+    }
+}

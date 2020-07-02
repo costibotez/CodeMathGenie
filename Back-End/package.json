@@ -1,0 +1,41 @@
+{
+  "name": "api-teachla",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env GOOGLE_APPLICATION_CREDENTIALS='icodegenie-ad63175ffe55.json' NODE_ENV=prod nodemon app.js",
+    "dev": "cross-env NODE_ENV=dev nodemon app.js",
+    "debug": "cross-env NODE_ENV=debug nodemon app.js",
+    "prod": "cross-env NODE_ENV=prod FS_DB=prod nodemon app.js"
+  },
+  "dependencies": {
+    "@google-cloud/logging-winston": "^3.0.5",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "cross-env": "^6.0.3",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "firebase": "^7.5.0",
+    "firebase-admin": "^8.8.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

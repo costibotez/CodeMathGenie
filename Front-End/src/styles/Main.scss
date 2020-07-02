@@ -1,0 +1,119 @@
+@import 'styles/variables.scss';
+@import 'react-redux-toastr/src/styles/index';
+.wrapper {
+  height: 100%;
+  background-color: #252132;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: $theme-dark;
+  justify-content: flex-start;
+  position: relative;
+  height: calc(100% - 90px);
+  width: 100%;
+  .main-editor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .home-page {
+    margin: auto;
+    vertical-align: middle;
+    color: $off-white;
+    text-align: center;
+    h1 { 
+      font-size: 70px;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 50px;
+      }
+    }
+    h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .recent-project-list {
+      display: flex;
+      ul {
+        color: white;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+        .project-link {
+          cursor: pointer;
+          color: $off-white;
+          font-size: 25px;
+          &:hover {
+            color: white;
+            font-weight: 800;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.home-wrapper {
+  height: 100%;
+  overflow-y: auto;
+  .home-users-page {
+    margin: 50px 50px;
+    vertical-align: middle;
+    color: $off-white;
+    text-align: center;
+    .users-box {
+      display: block;
+      margin: 30px;
+      text-align: center;
+      text-decoration: none;
+      .btn-circle { 
+        width: 240px; 
+        height: 240px; 
+        padding: 7px 10px; 
+        border-radius: 23px; 
+        font-size: 10px; 
+        text-align: center; 
+        background-size: 240px;
+        margin: 0;
+        display: block;
+      } 
+      span {
+        color: $off-white;
+        font-size: 25px;
+      }
+    }
+  }
+}
+.publish-ui {
+  background: $dark-purple;
+  text-align: center;
+  width: 700px;
+  padding: 40px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.23);
+  color: #fff;
+  h1, p {
+    color: $off-white;
+    word-break: break-all;
+  }
+  button {
+    width: 160px;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: 10px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+.public-btn {
+  position: absolute;
+  bottom: 50px;
+  background: none;
+  font-size: 30px;
+  left: calc(50% - 92px);
+}

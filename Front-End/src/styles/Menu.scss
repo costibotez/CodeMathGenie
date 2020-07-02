@@ -1,0 +1,110 @@
+@import 'styles/variables.scss';
+
+.menu {
+  background: $dark-purple !important;
+  color: $off-white;
+  height: 90px;
+  position: relative;
+  .container {
+    width: calc(100% - 66px);
+    min-width: 255px !important;
+    max-width: none;
+    margin-right: 60px;
+  }
+  .menu-item, .menu-item:focus, .nav-item, .nav-item:focus {
+    color: $off-white;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-right: 1.3rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: inline-block;
+    &:hover {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .nav-link {
+      color: $off-white;
+      padding: 0;
+      &:hover {
+        color: white;
+      }
+    }
+    .dropdown-menu {
+      margin-left:20px;
+    }
+    .users-box {
+      display: block;
+      color: black;
+      text-align: left;
+      padding: 2px 15px;
+      &:hover {
+        text-decoration: none;
+        background: rgba($color: lightblue, $alpha: 0.5);
+      }
+    }
+  }
+  .menu-right {
+    position: absolute;
+    right: 20px;
+    top: 26px;
+    .menu-profile-name {
+      color: $off-white;
+      font-size: 20px;
+      margin-right: 7px;
+    }
+    .dropdown {
+      display: inline-block;
+      .dropdown-menu {
+      }
+    }
+  }
+  #basic-navbar-nav {
+    z-index: 1;
+    color: $off-white;
+    .mr-auto {
+      background: $dark-purple;
+      border: 1px solid $dark-purple;
+      border-top: none !important;
+      border-radius: 0 0 0.5rem 0.5rem !important;
+      padding-bottom: 10px;
+    } 
+    .menu-item, .nav-item {
+      color: $off-white;
+      padding: 20px 20px 0 20px;
+      &:hover {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+    &.show {
+      .mr-auto {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      } 
+    }
+  }
+
+}
+
+
+.logo-img {
+  float: left;
+  height: 70px;
+  margin-right: 20px;
+}
+.btn-circle.btn-md { 
+  width: 46px; 
+  height: 46px; 
+  padding: 7px 10px; 
+  border-radius: 23px; 
+  font-size: 10px; 
+  text-align: center; 
+} 
+.btn-back {
+  background-size: 45px;
+  content: none;
+  &:after {
+    content: none;
+  }
+}

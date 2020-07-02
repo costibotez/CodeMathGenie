@@ -1,0 +1,64 @@
+@import "styles/variables.scss";
+
+.radio-selector {
+  display: flex;
+  font-size: 1rem;
+  float: left;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.radio-option {
+  background-color: $theme-light;
+  color: #eee;
+  padding: 8px;
+  cursor: pointer;
+  max-width: 70px;
+}
+
+.radio-option:hover {
+  box-shadow: inset 0 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.radio-option-selected {
+  border: none !important;
+  background-color: #7a45f0;
+  color: #fff;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.radio-option-selected:hover {
+  box-shadow: inset 0 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+#radio-left {
+  border-radius: 0.3rem 0 0 0.3rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+#radio-right {
+  border-radius: 0 0.3rem 0.3rem 0;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+.radio-horizon {
+  display: block;
+  .radio-option {
+    max-width: 150px;
+    text-align: center;
+  }
+  .radio-option-selected {
+    max-width: 150px;
+    text-align: center;
+  }
+  #radio-left {
+    border-radius: 0.3rem 0.3rem 0 0 !important;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  #radio-right {
+    border-radius: 0 0 0.3rem 0.3rem !important;
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.1) !important;
+  }
+}

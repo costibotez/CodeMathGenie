@@ -1,0 +1,85 @@
+@import 'styles/variables.scss';
+
+#user-modal .modal-content{
+    background: $dark-purple;
+    .modal-header {
+        color: $off-white;
+        .close {
+            color: $off-white;
+        }
+    }
+    .modal-body {
+        display: block;
+        .user-data-input {
+            padding-top: 5px;
+            width: 100%;
+            label {
+                color: $off-white;
+                display: flex;
+                width: 100%;
+                input {
+                    color: black;
+                    &:disabled {
+                        background-color: #bbbbbb;
+                    }
+                }
+            }
+        }
+        .user-data-drop {
+            padding-top: 5px;
+            width: 100%;
+            color: $off-white;
+            display: flex;
+            margin-bottom: 5px;
+            .dropdown {
+                width: 100%;
+                .dropdown-toggle {
+                    width: 100%;
+                    text-align: left;
+                    &::after {
+                        margin: 10px 0 0 0;
+                        float: right;
+                    }
+                }
+            }   
+        }
+        .location-form {
+            padding-top: 5px;
+            width: 100%;
+            color: $off-white;
+            display: flex;
+            .location-field {
+                width: 100%;
+                color: black;
+                .css-yk16xz-control, .css-1pahdxg-control {
+                    background-color: #6c757d;
+                    border-color: #6c757d;
+                    box-shadow: none;
+                    &:hover {
+                        background-color: #5a6268;
+                        border-color: #545b62;
+                    }
+                    .css-1uccc91-singleValue {
+                        color: $off-white;
+                    }
+                }
+                .css-xb97g8 {
+                    color: black;
+                }
+                .css-1wa3eu0-placeholder, .css-tlfecz-indicatorContainer, .css-1gtu0rj-indicatorContainer {
+                    color: $off-white;
+                }
+            }
+        }
+        span {
+            width: 40%;
+            color: $off-white;
+            line-height: 38px;
+        }
+        .help-block {
+            padding-bottom: 3px;
+            float: right;
+            color: #dd0000;
+        }
+    }
+}

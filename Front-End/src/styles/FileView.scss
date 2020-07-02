@@ -1,0 +1,103 @@
+@import 'styles/variables.scss';
+
+.file-view {
+  padding: 15px 15px;
+  position: relative;
+  height: 100%;
+  .file-list {
+    height: calc(100% - 100px);
+    margin-bottom: 25px;
+    overflow-y: auto;
+    overflow-x: auto;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: flex;
+        .file-link {
+          cursor: pointer;
+          color: $off-white;
+          font-size: 19px;
+          background: transparent;
+          border: none;
+          outline: none;
+          text-align: left;
+          width: 100%;
+          .dropdown-menu {
+            width: 120px;
+          }
+          &:focus {
+            outline: none;
+            border: none;
+          }
+          &:hover {
+            background: #2A2D2E !important;
+            color: white;
+          }
+          &.active {
+            background: #37373D;
+            color: white;
+            font-weight: 800;
+          }
+        }
+        .dropright:focus {
+          outline: none;
+          border: none;
+        }
+        .btn-secondary {
+          background: none;
+          outline: none;
+          border: none;
+          text-align: left;
+          box-shadow: none;
+        }
+        .dropdown-toggle.btn {
+          text-align: right;
+          &:after {
+            content: '\2807';
+            border: none;
+            color: #ccc;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .dropdown-item {
+          color: black;
+        }
+      }
+    }
+  }
+  
+}
+.new-file {
+  text-align: center;
+}
+.new-file-button-wrapper {
+  text-align: center;
+}
+.react-confirm-alert-overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.custom-ui {
+  background: $dark-purple;
+  text-align: center;
+  width: 500px;
+  padding: 40px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.23);
+  color: #fff;
+  h1, p {
+    color: $off-white;
+  }
+  button {
+    width: 160px;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: 10px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+  }
+}

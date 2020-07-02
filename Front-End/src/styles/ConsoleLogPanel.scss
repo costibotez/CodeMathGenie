@@ -1,0 +1,62 @@
+@import 'styles/variables.scss';
+
+.console-panel {
+  color: white;
+  background: $dark-purple;
+  height: 100%;
+  
+  .console-tool {
+    background: $gray-purple;
+    overflow: hidden;
+    .btn-toggle-console {
+      float: right;
+      background: none;
+      color: white;
+      border: none;
+      margin-right: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .log-panel {
+    padding: 10px;
+    overflow-y: auto;
+    height: calc(100% - 25px);
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        color: $off-white;
+        font-size: 19px;
+        background: transparent;
+        border: none;
+        outline: none;
+        display: flex;
+        .log-icon {
+          color: blue;
+          font-size: 13px;
+          background: greenyellow;
+          border-radius: 3px;
+          padding: 2px;
+          height: 25px;
+          text-align: center;
+          width: 40px;
+          margin-right: 3px;
+        }
+        .Warning {
+            background: yellow;
+          }
+        .Error {
+          background: red;
+        }
+        .log-data {
+          width: calc(100% - 45px);
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+  
+}
